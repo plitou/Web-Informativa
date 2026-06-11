@@ -130,7 +130,7 @@
                     <h4>Carlos Rojas</h4>
                 </div>
             </div>
-
+        </section>
         <!-- Informacion -->
         <section id="contacto">
             <div class="contacto-contenedor">
@@ -160,11 +160,11 @@
                     <h2>ESCRÍBEME DIRECTAMENTE</h2> 
                     <form>
                     <!-- Campos donde los usuarios ingresan o seleccionan informacion -->
-                    <input type="text" id="nombre" placeholder="Nombre Completo" minlength="3" required>
-                    <inpuT type="email" id="correo" placeholder="Correo Electrónico" required>
-                    <input type="tel" id="telefono" placeholder="Teléfono" pattern="[0-9]{9}" required>
-                    <input type="text" id="asunto" placeholder="Asunto" minlength="5" required>
-                    <select id="servicio" required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" minlength="3" required>
+                    <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" pattern="[0-9]{9}" required>
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" minlength="5" required>
+                    <select id="servicio" name="servicio" required>
                         <option value="">Servicio de Interés</option>
                         <option>Asesoría Profesional</option>
                         <option>Consultoría</option>
@@ -172,8 +172,8 @@
                     </select>
 
                     <label for="fecha">Cita de Servicio</label>
-                    <input type="date" id="fecha">
-                    <textarea id="mensaje" placeholder="Mensaje" minlength="10" maxlength="500" required></textarea>
+                    <input type="date" id="fecha" name="fecha">
+                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" minlength="10" maxlength="500" required></textarea>
                     <button type="submit">ENVIAR</button>
                     </form>
                 </div>
@@ -185,7 +185,7 @@
     <footer>
         <p>© 2026 SERP - Todos los derechos reservados.</p>
         <div class="rrss">
-        <p><a href="https://www.facebook.com/"">FaceBook</a> | <a href="https://www.instagram.com/">Instagram</a> | <a href="https://cl.linkedin.com/">LinkedIn</a></p>
+        <p><a href="https://www.facebook.com/">FaceBook</a> | <a href="https://www.instagram.com/">Instagram</a> | <a href="https://cl.linkedin.com/">LinkedIn</a></p>
         </div>
     </footer>
 </body>
