@@ -367,6 +367,61 @@ footer{
     color: white;
     transition: 0.3s;
     
+} 
+
+/* PAGINA SERVICIO */
+
+.servicio-detalle{
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 30px;
+}
+
+.servicio-card{
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    margin-bottom:40px;
+}
+
+.servicio-card h2{
+    color:#134e4a;
+}
+
+.tecnologias{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.tech{
+    background:white;
+    padding:20px;
+    width:180px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.precio-servicio{
+    background:#134e4a;
+    color:white;
+    text-align:center;
+    padding:40px;
+    border-radius:15px;
+}
+
+.precio-servicio h2{
+    color:white;
+}
+
+.precio{
+    font-size:40px;
+    font-weight:bold;
+    margin:20px 0;
 }
 
 /* Responsive */
