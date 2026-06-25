@@ -40,6 +40,12 @@ nav{
     padding:25px 80px;
 }
 
+/* Selector avanzado */
+
+nav > .menu{
+    list-style:none;
+}
+
 .menu{
     display:flex;
     gap:30px;
@@ -150,6 +156,11 @@ section h2::after{
     justify-content:center;
     gap:25px;
     flex-wrap:wrap;
+}
+
+/* Selector avanzado */
+.contenedor-servicios > .servicios{
+    background:white;
 }
 
 .servicios{
@@ -425,3 +436,6 @@ footer{
     }
 
 }
+
+
+
