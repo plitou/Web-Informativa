@@ -133,11 +133,11 @@
                 <!-- Formulario -->
                 <div class="contacto-formulario">
                     <h2>ESCRÍBEME DIRECTAMENTE</h2> 
-                    <form>
+                    <form id="formulario">
                     <!-- Campos donde los usuarios ingresan o seleccionan informacion -->
                     <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" minlength="3" required>
                     <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" pattern="[0-9]{9}" required>
+                    <input type="tel" id="telefono" name="telefono" placeholder= "56 9 11111111" pattern = "56 9 [0-9]{8}" required>
                     <input type="text" id="asunto" name="asunto" placeholder="Asunto" minlength="5" required>
                     <select id="servicio" name="servicio" required>
                         <option value="">Servicio de Interés</option>
@@ -147,8 +147,9 @@
                     </select>
 
                     <label for="fecha">Cita de Servicio</label>
-                    <input type="date" id="fecha" name="fecha">
-                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" minlength="10" maxlength="500" required></textarea>
+                    <input type="date" id="fecha" name="fecha" required>
+                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" minlength="10" maxlength="550" required></textarea>
+                    <p id="contador">0 / 550 Contador</p>
                     <button type="submit">ENVIAR</button>
                     </form>
                 </div>
@@ -162,6 +163,8 @@
         <div class="rrss">
         <p><a href="https://cl.linkedin.com/" target="_blank">LinkedIn</a></p>
         </div>
+        <button id="subir">↑</button>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

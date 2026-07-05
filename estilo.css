@@ -427,6 +427,26 @@ footer{
     margin:20px 0;
 }
 
+/* boton de subir */
+#subir{
+    position: fixed;
+    bottom:25px;
+    right:25px;
+    display:none;
+    padding:15px;
+    border-radius:50%;
+    z-index:1000;
+}
+
+/* contador de caracteres */
+#contador{
+    text-align: right;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+
+
 /* Responsive */
 
 @media(max-width:1000px){
