@@ -55,7 +55,7 @@ function validarFecha(){
     }
 }
 
-// Boton ocultar bio
+// Botón ocultar biografía
 const btnBiografia = document.getElementById("btnBiografia");
 const biografia = document.querySelector(".texto-biografia");
 
@@ -69,6 +69,10 @@ function cambiarBiografia() {
         btnBiografia.textContent = "Mostrar Biografía";
     }
 
+}
+
+if (btnBiografia && biografia) {
+    btnBiografia.addEventListener("click", cambiarBiografia);
 }
 
 fecha.addEventListener("change", validarFecha);
