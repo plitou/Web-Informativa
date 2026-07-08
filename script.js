@@ -43,3 +43,50 @@ window.scrollTo({
     });
 });
 
+// Boton ocultar bio
+const btnBiografia = document.getElementById("btnBiografia");
+const biografia = document.querySelector(".texto-biografia");
+
+function cambiarBiografia() {
+    if (biografia.style.display === "none") {
+        biografia.style.display = "block";
+        btnBiografia.textContent = "Ocultar Biografía";
+    } else {
+        biografia.style.display = "none";
+        btnBiografia.textContent = "Mostrar Biografía";
+    }
+}
+
+// Validar fecha
+const fecha = document.getElementById("fecha");
+
+function validarFecha(){
+    const hoy = new Date().toISOString().split("T")[0];
+
+    if(fecha.value < hoy){
+        alert("Debe seleccionar una fecha válida.");
+        fecha.value="";
+    }
+}
+
+fecha.addEventListener("change", validarFecha);
+
+// saludo de nombre
+const nombre = document.getElementById("nombre");
+const saludoUsuario = document.getElementById("saludoUsuario");
+
+function actualizarSaludo() {
+
+    if (nombre.value.trim() === "") {
+        saludoUsuario.innerHTML = "Complete sus datos para solicitar una asesoría profesional.";
+    } else {
+        saludoUsuario.innerHTML =
+            "<strong>Bienvenido(a), " +
+            nombre.value +
+            ".</strong><br>Estamos preparados para brindarle una solución tecnológica adaptada a sus necesidades.";
+    }
+}
+
+nombre.addEventListener("input", actualizarSaludo);
+actualizarSaludo();
+

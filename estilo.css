@@ -5,7 +5,6 @@
 }
 
 body{
-    margin:0;
     font-family:Arial, Helvetica, sans-serif;
     background:#f4f4f4;
 }
@@ -40,7 +39,6 @@ nav{
     padding:25px 80px;
 }
 
-/* Selector avanzado */
 
 nav > .menu{
     list-style:none;
@@ -180,7 +178,6 @@ section h2::after{
 
 .servicios:hover{
     transform:translateY(-8px);
-    transition:0.3s;
 }
 
 .servicios:nth-child(2){
@@ -415,16 +412,11 @@ footer{
     text-align:center;
     padding:40px;
     border-radius:15px;
+    margin-top: 40px;
 }
 
 .precio-servicio h2{
     color:white;
-}
-
-.precio{
-    font-size:40px;
-    font-weight:bold;
-    margin:20px 0;
 }
 
 /* boton de subir */
@@ -438,6 +430,17 @@ footer{
     z-index:1000;
 }
 
+.saludo{
+    background:#ffffff;
+    border-left:4px solid #14b8a6;
+    padding:12px 16px;
+    border-radius:8px;
+    margin-bottom:20px;
+    color:#010101;
+    font-size:15px;
+    line-height:1.5;
+}
+
 /* contador de caracteres */
 #contador{
     text-align: right;
@@ -445,12 +448,66 @@ footer{
     color: #555;
 }
 
+/* Cotizacion */
+
+.cotizacion{
+
+    max-width: 400px;
+    margin:40px auto;
+    padding:30px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+
+}
+
+.descripcion-cotizacion{
+    color:#000000;
+    margin-bottom:20px;
+
+}
+
+.cotizacion select{
+    width:100%;
+    padding:12px;
+    font-size:16px;
+    border-radius:8px;
+    margin-top:10px;
+
+}
+
+.texto-precio{
+    font-size: 20px;
+}
+
+.precio{
+    font-size:55px;
+    font-weight:bold;
+    margin:10px 0;
+    transition:.3s;
+}
+
+.descripcion-precio{
+    margin-bottom:30px;
+}
 
 
 /* Responsive */
 
 @media(max-width:1000px){
 
+    nav{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    
     .contacto-contenedor{
         grid-template-columns:1fr;
     }
