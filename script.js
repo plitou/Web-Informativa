@@ -43,20 +43,6 @@ window.scrollTo({
     });
 });
 
-// Boton ocultar bio
-const btnBiografia = document.getElementById("btnBiografia");
-const biografia = document.querySelector(".texto-biografia");
-
-function cambiarBiografia() {
-    if (biografia.style.display === "none") {
-        biografia.style.display = "block";
-        btnBiografia.textContent = "Ocultar Biografía";
-    } else {
-        biografia.style.display = "none";
-        btnBiografia.textContent = "Mostrar Biografía";
-    }
-}
-
 // Validar fecha
 const fecha = document.getElementById("fecha");
 
@@ -67,6 +53,22 @@ function validarFecha(){
         alert("Debe seleccionar una fecha válida.");
         fecha.value="";
     }
+}
+
+// Boton ocultar bio
+const btnBiografia = document.getElementById("btnBiografia");
+const biografia = document.querySelector(".texto-biografia");
+
+function cambiarBiografia() {
+
+    if (biografia.style.display === "none") {
+        biografia.style.display = "block";
+        btnBiografia.textContent = "Ocultar Biografía";
+    } else {
+        biografia.style.display = "none";
+        btnBiografia.textContent = "Mostrar Biografía";
+    }
+
 }
 
 fecha.addEventListener("change", validarFecha);
